@@ -32,19 +32,51 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
-
+```
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+Developed by: PAMURU VENKATESH
+RegisterNumber: 24010537
+```
+```
+module Boolean_min(A,B,C,D,W,X,Y,Z,F1,F2);
+input A,B,C,D,W,X,Y,Z;
+wire x1,x2,x3,x4,x5,x6,x7,x8,x9,x10;
+output F1,F2;
+assign x1=(~A)&(~B)&(~C)&(~D);
+assign x2=(A)&(~C)&(~D);
+assign x3=(~B)&(C)&(~D);
+assign x4=(~A)&(B)&(C)&(D);
+assign x5=(B)&(~C)&(D);
+assign x6=(X)&(~Y)&(Z);
+assign x7=(~X)&(~Y)&(Z);
+assign x8=(~W)&(X)&(Y);
+assign x9=(W)&(~X)&(Y);
+assign x10=(W)&(X)&(Y);
+assign F1=x1|x2|x3|x4|x5;
+assign F2=x6|x7|x8|x9|x10;
+endmodule
+
+```
 
 
 **RTL realization**
 
+![image](https://github.com/user-attachments/assets/d9588ea2-8a0a-4abc-a964-d4255f1ceb02)
+
 **Output:**
 
-**RTL**
+![image](https://github.com/user-attachments/assets/e6917a81-8796-4c33-85a4-c7a861289c88)
 
-**Timing Diagram**
+
+
+**Logic symbol & Truthtable:**
+
+![image](https://github.com/user-attachments/assets/51228950-326b-4519-acee-27a0cd9cd2ac)
+
+![image](https://github.com/user-attachments/assets/46e5eea6-9dee-4c27-9fe9-4d979bbfa659)
+
+
 
 **Result:**
 
